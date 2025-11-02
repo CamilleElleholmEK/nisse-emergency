@@ -19,12 +19,12 @@
   --border-radius-links: 37px;
 
   /* Headlines og rubrik */
-  --font-h1-size: 1rem;
-  --font-sub1-size: 1rem;
+  --font-h1-size: 3rem;
+  --font-sub1-size: 3rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
   --color-headline-bg: #000000;
-  --color-headline-text-page: #42413d;
+  --color-headline-text-page: #fffae2;
 
   /* Tekst */
   --color-text: #000;
@@ -41,9 +41,9 @@
   --color-cta-card-bg: #ff4b00;
   /* news-cards */
   --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #585a5e;
+  --color-news-bg-inverted: #dbe2f5;
   --color-cta-newscard-bg: #ffa680;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-cta-newscard-bg-inverted: #6f90eb;
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -53,7 +53,7 @@
   --font-weight-bold: 700;
 
   /* Text sizes */
-  --logotype-size: 1rem;
+  --logotype-size: rem;
   --headline1-size: 2rem;
   --headline2-size: 1rem;
   --headline3-size: 1rem;
