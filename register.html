@@ -34,18 +34,102 @@
     </header>
 
     <main>
-      <h1>INDBERET</h1>
+      <h1>SØG STØTTE</h1>
       <section id="form-section">
         <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
+          <h2>Tilmeld dig her</h2>
+          <p>
+            Her kan du søge om terapeutisk støtte efter en oplevelse med en
+            mansplainer. Du kan desuden tilmelde dig en støttegruppe i dit
+            lokalområde.
+          </p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <!-- Personlig info -->
+
+          <label for="name_input">Navn</label>
+          <input type="text" name="" id="name_input" />
+
+          <label for="email_input">Email</label>
+          <input type="email" name="" id="email_input" />
+
+          <label for="phone_input">Telefon nr.</label>
+          <input type="tel" name="" id="phone_input" />
+
+          <!-- Støttegruppe radio buttons -->
+
+          <fieldset>
+            <legend>
+              <p>Tilmeld støttegruppe?</p>
+            </legend>
+
+            <label for="support_yes">
+              <input
+                type="radio"
+                name="support"
+                id="support_yes"
+                value="jaTak"
+              />
+              Ja tak
+            </label>
+
+            <label for="support_no">
+              <input
+                type="radio"
+                name="support"
+                id="support_no"
+                value="nejTak"
+              />
+              Nej tak
+            </label>
+          </fieldset>
+
+          <!-- Område vælger -->
+
+          <label for="area_select">Vælg kommune</label>
+
+          <select name="area" id="area_select">
+            <option value="">Vælg her</option>
+            <option value="koebenhavn">København</option>
+            <option value="gribskov">Gribskov</option>
+            <option value="herning">Herning</option>
+            <option value="jammerbugt">Jammerbugt</option>
+            <option value="guldborgsund">Guldborgsund</option>
+            <option value="fanoe">Fanø</option>
+          </select>
+
+          <!-- Textarea -->
+
+          <label for="experience_input"
+            >Beskriv en traumatisk oplevelse med en mansplainer</label
+          >
+          <textarea name="experience" id="experience_input"></textarea>
+
+          <!-- Submit knap -->
+
+          <button>Indsend</button>
+        </form>
       </section>
+
       <section id="form-summary">
-        <h2>Summary</h2>
+        <h2>Hvorfor terapi og støttegruppe?</h2>
         <article>
-          <p class="placeholder">Opsummering</p>
+          <p class="placeholder">
+            Tilmelding til terapiforløb + lokal støttegruppe er som at få et
+            abonnement på indre støjreduktion. Terapi lærer dig at afmontere
+            “faktisk”-granater i slowmotion: du får værktøjer til grænsesætning,
+            et traumeinformeret lygteblink til at opdage mikroskopiske triggere
+            og kropslige alarmklokker, plus øvelser der begynder i åndedrættet
+            og lander i selvrespekt. Støttegruppen er dit ugentlige pitstop: et
+            rum hvor alle kender lyden af “nu skal du høre,” og hvor man træner
+            jordforbindelse før punchlines—som at parkere skuldrene, tjekke puls
+            og vælge én sætning ad gangen. Du går derfra med lettere skuldre, en
+            personlig manual til energibudget, en lille værktøjskasse af
+            comeback-sætninger, og en flok medkonspiratorer der klapper, når du
+            registrerer en trigger og vælger at grounde, bede om en pause eller
+            sige “vi parkerer den her.” Kort sagt: færre flashbacks, mindre
+            alarmberedskab og en stabil indre fortæller—med humoren intakt.
+          </p>
         </article>
       </section>
     </main>
