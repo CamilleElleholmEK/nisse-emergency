@@ -30,3 +30,89 @@
   margin: 0 0 1.2rem 0;
   padding: 0;
 }
+
+textarea {
+  border: #dbe2f5 solid 4px;
+}
+
+select {
+  padding: 8px;
+  border-radius: 0px;
+  border: #dbe2f5 solid 4px;
+}
+
+fieldset {
+  padding: 8px;
+  border: #dbe2f5 solid 4px;
+}
+
+.form-group:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+
+#webform {
+  background-color: white;
+  border-radius: 37px;
+}
+
+.form-group:has(:user-invalid) {
+  input {
+    border-color: darkred;
+  }
+  .error-message {
+    display: block;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #90aeff;
+  outline-offset: 1px;
+}
+
+button:hover {
+  background: #a93300;
+}
+
+button:active {
+  scale: 0.98;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.1rlh;
+}
+
+label:has(input) {
+  display: flex;
+  align-items: center;
+  gap: 0.75ch;
+}
+
+form {
+  accent-color: #ff4b00;
+  display: grid;
+  gap: 1rlh;
+  padding: 1rlh;
+}
+
+button {
+  padding: 4px 20px 4px 20px;
+  background-color: #ff4b00;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  padding: 3px;
+  box-shadow: 1px 1px 5px lightgray;
+  background-color: #dbe2f5;
+  border: none;
+}
+
+.error-message {
+  color: darkred;
+}
