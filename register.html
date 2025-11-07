@@ -44,22 +44,28 @@
             lokalområde.
           </p>
         </article>
-        <form id="webform">
+        <form aria-label="Søg støtte forumular" id="webform">
           <!-- Personlig info -->
 
           <div class="form-group">
             <label for="name_input">Navn</label>
-            <input required type="text" name="" id="name_input" />
+            <input aria-describedby="name-error" required type="text" name="name_input" id="name_input" />
+            <p class="error-message" id="name-error">Indtast fulde navn</p>
+    </div>
           </div>
 
           <div class="form-group">
             <label for="email_input">Email</label>
-            <input required type="email" name="" id="email_input" />
+            <input aria-describedby="mail-error" required type="email" name="email_input" id="email_input" />
+            <p class="error-message" id="mail-error">Indtast gyldig email</p>
+    </div>
           </div>
 
           <div class="form-group">
             <label for="phone_input">Telefon nr.</label>
-            <input required type="tel" name="" id="phone_input" />
+            <input aria-describedby="phone-error" required type="tel" name="phone_input" id="phone_input" />
+            <p class="error-message" id="phone-error">Indtast gyldigt telefon nr.</p>
+    </div>
           </div>
 
           <!-- Støttegruppe radio buttons -->
@@ -70,43 +76,48 @@
               </legend>
 
               <label for="support_yes">
-                <input
+                <input aria-describedby="support-error"
                   required
                   type="radio"
                   name="support"
                   id="support_yes"
-                  value="jaTak"
+                  value="Ja tak"
                 />
                 Ja tak
               </label>
 
               <label for="support_no">
-                <input
+                <input aria-describedby="support-error"
                   required
                   type="radio"
                   name="support"
                   id="support_no"
-                  value="nejTak"
+                  value="Nej tak"
                 />
                 Nej tak
               </label>
+              <p class="error-message" id="support-error">Vælg en mulighed</p>
+              <p id="think" class="form_hide">Tænk dig lige om. Du er ved at søge terapeutisk støtte efter din oplevelse med en mansplainer. Det er nok en god ide at tilmelde dig en støttegruppe i dit lokalområde. <br>
+              Vælg "Ja tak" og prøv igen.</p>
             </fieldset>
+            
           </div>
 
           <!-- Område vælger -->
 
-          <div class="form-group">
-            <label for="area_select">Vælg kommune</label>
+          <div class="form_hide" class="form-group" id="area_section">
+            <label for="area_select">Vælg kommune <span class="star"> *</span></label>
 
-            <select name="area" id="area_select">
+            <select aria-describedby="area-error" required name="area" id="area_select">
               <option value="">Vælg her</option>
-              <option value="koebenhavn">København</option>
-              <option value="gribskov">Gribskov</option>
-              <option value="herning">Herning</option>
-              <option value="jammerbugt">Jammerbugt</option>
-              <option value="guldborgsund">Guldborgsund</option>
-              <option value="fanoe">Fanø</option>
+              <option value="København">København</option>
+              <option value="Gribskov">Gribskov</option>
+              <option value="Herning">Herning</option>
+              <option value="Jammerbugt">Jammerbugt</option>
+              <option value="Guldborgsund">Guldborgsund</option>
+              <option value="Fanø">Fanø</option>
             </select>
+            <p class="error-message" id="area-error">Vælg en mulighed</p>
           </div>
 
           <!-- Textarea -->
@@ -124,23 +135,17 @@
       </section>
 
       <section id="form-summary">
-        <h2>Hvorfor terapi og støttegruppe?</h2>
+        <h2>Oversigt</h2>
         <article>
-          <p class="placeholder">
-            Tilmelding til terapiforløb + lokal støttegruppe er som at få et
-            abonnement på indre støjreduktion. Terapi lærer dig at afmontere
-            “faktisk”-granater i slowmotion: du får værktøjer til grænsesætning,
-            et traumeinformeret lygteblink til at opdage mikroskopiske triggere
-            og kropslige alarmklokker, plus øvelser der begynder i åndedrættet
-            og lander i selvrespekt. Støttegruppen er dit ugentlige pitstop: et
-            rum hvor alle kender lyden af “nu skal du høre,” og hvor man træner
-            jordforbindelse før punchlines—som at parkere skuldrene, tjekke puls
-            og vælge én sætning ad gangen. Du går derfra med lettere skuldre, en
-            personlig manual til energibudget, en lille værktøjskasse af
-            comeback-sætninger, og en flok medkonspiratorer der klapper, når du
-            registrerer en trigger og vælger at grounde, bede om en pause eller
-            sige “vi parkerer den her.” Kort sagt: færre flashbacks, mindre
-            alarmberedskab og en stabil indre fortæller—med humoren intakt.
+          <p class="summary_text">Navn: <span id="name_output"></span></p>
+          <p class="summary_text">Email: <span id="email_output"></span></p>
+          <p class="summary_text">Telefon nr.: <span id="phone_output"></span></p>
+          <p class="summary_text">
+            Tilmeld støttegruppe: <span id="support_output"></span>
+          </p>
+          <p class="form_hide" class="summary_text" id="kommune">Kommune: <span id="area_output"></span></p>
+          <p class="summary_text">
+            Traumatisk oplevelse: <span id="experience_output"></span>
           </p>
         </article>
       </section>
@@ -172,6 +177,7 @@
       </nav>
     </footer>
     <script src="js/burger.js"></script>
+    <script src="js/register.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
 </html>
