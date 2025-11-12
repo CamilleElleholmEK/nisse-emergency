@@ -11,15 +11,30 @@
   padding: 20px 0;
 }
 .info-graphic {
-  border-radius: 0;
+  border-radius: 37;
   margin: 60px auto 80px auto;
 }
+
+.info-graphic svg {
+  width: 450px;
+  height: auto;
+  justify-self: center;
+  padding: 10px;
+}
+
+.info-graphic button {
+  border-radius: 37px;
+  padding: 4px 15px 4px 15px;
+  
+}
+
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
   background-color: var(--color-headline-bg);
   color: var(--color-headline-text-page);
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .info-text h3 {
   font-size: 0.8rem;

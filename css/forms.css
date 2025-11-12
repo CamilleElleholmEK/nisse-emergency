@@ -21,6 +21,10 @@
   margin-bottom: 15px;
 }
 
+#form-summary article {
+  max-width: 330px;
+}
+
 #form-section h2 {
   margin-bottom: 15px;
 }

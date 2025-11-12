@@ -23,6 +23,7 @@ function toggleOn() {
   document.querySelector("#area_section").classList.remove("form_hide");
   kommune.classList.remove("form_hide");
   document.querySelector("#think").classList.add("form_hide");
+  document.querySelector("#area_select").required = true;
 }
 
 function toggleOff() {
@@ -30,9 +31,11 @@ function toggleOff() {
   document.querySelector("#area_section").classList.add("form_hide");
   kommune.classList.add("form_hide");
   document.querySelector("#think").classList.remove("form_hide");
+  document.querySelector("#area_select").required = false;
 }
 
 function handleSubmit(event) {
+  console.log("handle submit loaded");
   event.preventDefault();
 
   // Samle værdier
