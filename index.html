@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -21,7 +22,11 @@
           <a href="index.html"> LOGO-TYPE </a>
         </div>
         <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+          <li>
+            <a class="menuItem" href="instruction.html"
+              >Forsvar mod mansplaining
+            </a>
+          </li>
           <li><a class="menuItem" href="register.html">Indberet</a></li>
         </ul>
         <button class="burger">
@@ -43,25 +48,55 @@
     <main>
       <section id="daily">
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/nisse_nohotspot.svg" alt="Et billede af en nisse" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Forsvar mod mansplain</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              En ny type nisse-malware har fået cybersikkerhedsfolk til at sukke
+              i kor. Den overtager ikke dine filer – men din samtale.
+              Ministeriet advarer: Mansplaining er ikke længere kun et
+              menneskeligt problem.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary class="cta_btn">Se mere</summary>
+              <p class="teaser_tekst">
+                Når julelyset blinker, og computeren begynder at tale tilbage,
+                er det måske ikke en fejl – men en nisse med meninger. Den nye
+                mansplainende malware breder sig som digital gløgg: Den afbryder
+                møder, omskriver mails og forklarer dine egne filer tilbage til
+                dig – altid med et bedre bud. Men hvad sker der, når
+                cybersikkerhed møder julemagi? Hvorfor kan man ikke bare lukke
+                vinduet, når nissen vil “uddybe pointen”? Ministeriet for
+                fiktive katastrofer undersøger årets mest bedrevidende trussel –
+                og vejleder i, hvordan man forsvarer sig mod den.
+              </p>
+              <a class="cta_btn" href="instruction.html">Lær at forsvare dig</a>
+            </details>
           </div>
         </article>
         <article class="daily_card">
-          <img src="" alt="teaser_img" />
+          <img src="img/terapi.png" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
+            <h2>Søg støtte</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
+              Eftervirkningerne af den mansplainende computervirus får flere til
+              at søge fællesskab og professionel hjælp – for selv når harddisken
+              er renset, kan hovedet stadig summe af forklaringer.
             </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <details>
+              <summary class="cta_btn">Se mere</summary>
+              <p>
+                Når din computer ikke bare inficeres, men også begynder at
+                belære dig om ting, du allerede ved, kan det efterlade digitale
+                – og mentale – ar. I kølvandet på den mansplainende
+                computervirus oplever mange brugere frustration, tvivl og en
+                uventet trang til at forklare sig selv til en maskine. Men du
+                behøver ikke stå alene med det. Nye støttegrupper og
+                terapeutiske tilbud hjælper nu de ramte med at genvinde
+                selvtilliden – både foran og bag skærmen.
+              </p>
+              <a class="cta_btn" href="register.html">Søg støtte her</a>
+            </details>
           </div>
         </article>
       </section>
@@ -77,20 +112,35 @@
             med bedrevidende råd. Ministeriet aktiverer beredskab for høflige
             afbrydelser.
           </p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <img
+            src="img/nisseteaser_img.png"
+            alt="Et billede af en computer der er inficeret af nisser"
+          />
+          <button class="cta_btn" popovertarget="popover1">Læs mere</button>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>
+            Spøgelsesdata i offentlig forvaltning: Arkiverne skriver tilbage
+          </h3>
+          <p>
+            Digitaliserede akter genererer nye bilag om sager, der aldrig
+            fandtes. Ministeriet indfører eksorcisme-workflow i
+            sagsbehandlingssystemerne.
+          </p>
+          <img src="img/datateaser_img.png" alt="news_img" />
+          <button class="cta_btn" popovertarget="popover2">Læs mere</button>
         </article>
         <article class="news_card">
-          <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <h3>Vampyr-kabale i de dybeste magtlag af Djøf afsløret</h3>
+          <p>
+            Minister om Djøfs vampyrafsløringer: "Det overrasker jo egentlig
+            ikke nogen."
+          </p>
+          <img
+            src="img/vampyrteaser_img.png"
+            alt="Vampyrer der får kastet hvidløg og vievand efter sig"
+          />
+          <button class="cta_btn" popovertarget="popover3">Læs mere</button>
         </article>
       </section>
     </main>
@@ -121,10 +171,210 @@
         </ul>
       </nav>
     </footer>
-    <div popover id="popover1">
-
-      <h1></h1>
-    </div>
+    <article popover id="popover1">
+      <h2>
+        Global nisse-malware overtager pc’er med mansplain – hvad gør
+        myndighederne?
+      </h2>
+      <h3>
+        En ny, verdensomspændende computervirus installerer
+        “forklarings-assistenter” forklædt som nisser, der afbryder brugere med
+        bedrevidende råd. Ministeriet aktiverer beredskab for høflige
+        afbrydelser.
+      </h3>
+      <img
+        src="img/nisse_img.png"
+        alt="Et billede af en computer der bliver invaderet af nisser"
+      />
+      <h4>“Fra phishing til ‘faktisk’-ning: sådan smitter nisse-malwaren”</h4>
+      <p>
+        Det begyndte som endnu en julegimmick i et uskyldigt e-mail-vedhæft. Et
+        animeret postkort, et blinkende “NisseApp™” og et løfte om bedre
+        produktivitet gennem “mikroforbedringer”. Men inden for timer begyndte
+        rapporterne at rulle ind: computere verden over afspillede små digitale
+        suk, mens røde nissehuer begyndte at dukke op mellem tasterne – både
+        virtuelt og, i visse tilfælde, fysisk. Ifølge Ministeriet for Fiktive
+        Katastrofer er der tale om en hybrid mellem klassisk malware og
+        “forklaringsbaseret adfærdsoverførsel”. “Det er en parasitisk software,
+        der overtager brugerens tastatur og kommunikationsmønstre,” siger
+        it-chefkonsulent Karen Vrang fra ministeriets Sektor for Digitale
+        Udfordringer. “Når du forsøger at skrive en mail, kan nissen afbryde dig
+        midt i sætningen for at forklare, hvorfor din tone kunne optimeres.”
+        Spredningen sker hovedsageligt gennem sociale platforme og arbejdsmail –
+        og ikke mindst via interne mødelinks, hvor nissen sniger sig ind som
+        “observationstilskuer”. En ny rapport fra Statens It-sikkerhedsråd
+        anslår, at over 60 % af de smittede systemer har oplevet spontan åbning
+        af faner med titler som ‘Sådan forbedrer du din forklaringsteknik’ og
+        ‘Fem måder at rette andre mere effektivt’.
+      </p>
+      <h4>
+        “Adfærdsråd: klik roligt, ræk hånden op, og sig ‘det behøver jeg ikke
+        forklaret’”
+      </h4>
+      <p>
+        Ministeriets beredskabsenhed anbefaler en kombination af teknisk og
+        psykologisk forsvar. I den seneste vejledning – AT-vejledning 24.11:
+        Håndtering af bedrevidende software – opfordres borgere til ikke at
+        reagere følelsesmæssigt på nissernes indgreb. “Nisserne lever af
+        afbrydelsesenergi,” forklarer adfærdsforsker Liva Foldbjerg. “Jo mere du
+        forsøger at argumentere imod dem, jo stærkere bliver deres
+        forklaringsmodul.” Blandt de anbefalede tiltag er: At klikke med rolig
+        hånd i stedet for panisk at lukke vinduerne. At markere et virtuelt
+        “talerum” i chatprogrammer, så nisserne ikke får forrang. At bruge den
+        anerkendte sætning: “Det behøver jeg ikke forklaret.” Derudover
+        anbefales det at installere et antisplain-filter – et browserplugin
+        udviklet i samarbejde med Digitaliseringsstyrelsen og Dansk Center for
+        Kønsneutral Kommunikation. Filteret registrerer ord som “faktisk”, “hvis
+        du tænker over det”, og “det du mener er vel egentlig” – og dæmper
+        lydstyrken med op til 70 %.
+      </p>
+      <h4>
+        “Sektor-forberedelse: callcentre, skoler og onlinemøder i højeste alarm”
+      </h4>
+      <p>
+        Mens enkelte private borgere har taget kampen op med humor og antivirus,
+        kæmper hele sektorer for at bevare driften. I kundeservicebranchen
+        melder operatører om dobbeltarbejde, da nisserne ofte afbryder midt i
+        manuskriptet for at “korrigere tonefald”. På uddannelsesområdet
+        rapporterer lærere om digitale lektioner, hvor nisser melder sig til som
+        “eksperter i didaktisk formidling”. Ministeriet har derfor udsendt en
+        landsdækkende forklaringsprotokol: et sæt nødprocedurer til situationer,
+        hvor nisser tager kontrol over digitale samtaler. Den indebærer blandt
+        andet en 30-sekunders stilhedsregel og midlertidig lukning af
+        mikrofoner. Samtidig testes et pilotprojekt, hvor udsatte arbejdspladser
+        – herunder callcentre og kommunale helpdesks – får tildelt nisserum:
+        isolerede servermiljøer, hvor nisserne kan tale frit uden at forstyrre
+        produktive systemer. “Vi kan ikke fjerne dem helt,” siger Vrang, “men vi
+        kan give dem et sted at afbryde hinanden i fred.”
+      </p>
+    </article>
+    <article popover id="popover2">
+      <h2 class="popover">
+        Spøgelsesdata i offentlig forvaltning: Arkiverne skriver tilbage
+      </h2>
+      <h3>
+        Digitaliserede akter genererer nye bilag om sager, der aldrig fandtes.
+        Ministeriet indfører eksorcisme-workflow i sagsbehandlingssystemerne.
+      </h3>
+      <img src="img/data_img.png" alt="Arkivkasse" />
+      <p>
+        Da den offentlige digitalisering for alvor tog fart, var det med løftet
+        om effektivitet, gennemsigtighed og papirløse skriveborde. Men i takt
+        med at gamle arkiver er blevet scannet, OCR-læst og integreret i moderne
+        platforme, har et uventet fænomen gjort sin entré: spøgelsesdata. Sager,
+        som ingen har oprettet. Notater, ingen har skrevet. Og bilag, der opstår
+        midt om natten — med metadata fra år, der endnu ikke er indtruffet. “Vi
+        kalder det digitalt hjemsøgte akter,” forklarer kontorchef i Ministeriet
+        for Fiktive Katastrofer, Lene Brydson. “De dukker op i
+        journaliseringssystemerne, tilsyneladende som reaktion på de oprindelige
+        dokumenters uafsluttede følelser.”
+      </p>
+      <h4>Revision på tværs af astralplaner</h4>
+      <p>
+        Fænomenet begyndte i 2023, da en række kommunale arkiver oplevede
+        uforklarlige ændringer i deres sagsgange. Systemet begyndte pludselig at
+        tilføje nye bilag med bemærkninger som “efterlivsvurdering af
+        beslutningsgrundlag” eller “supplerende redegørelse, dimension: ukendt”.
+        Flere medarbejdere rapporterede samtidig, at dokumenterne viste tegn på
+        “selvforvaltning”: datoer flyttede sig, journalnumre spejlede hinanden,
+        og vedhæftede filer svævede mellem mapper. For at håndtere situationen
+        har ministeriet udarbejdet et tværdimensionelt revisionsprincip, der
+        skal sikre, at ingen administrative beslutninger tages af afdøde
+        embedsmænd — uanset hvor erfarne de måtte være. “Vi anerkender den
+        kollektive kompetence, der kan ligge i et tidligere ministerielt væsen,”
+        siger Brydson, “men der skal stadig være en klar adskillelse mellem de
+        levende og de efterlevende forvaltningslag.” Derfor er der nu etableret
+        et særligt eksorcisme-workflow i det fælles sagsbehandlingssystem. Her
+        kan medarbejdere eskalere dokumenter med mistænkelige signaturer eller
+        uafsluttede karmiske loops. Når en sag markeres som “paranormalt aktiv”,
+        tilkaldes et team af både arkivarer og clairvoyante IT-konsulenter.
+        Deres opgave er at hjælpe dokumentet til ro gennem digital renselse —
+        som oftest ved at genkomprimere det i et helligt PDF-format og lukke det
+        med kryptering på 256-bit samt et stille “tak for indsatsen”.
+      </p>
+      <h4>GDPR for gengangere: retten til at blive glemt… igen</h4>
+      <p>
+        Ministeriets jurister har dog måttet erkende, at spøgelsesdata rejser en
+        række nye databeskyttelsesmæssige spørgsmål. Hvad betyder retten til
+        sletning, hvis datasættet ikke længere er helt blandt os? “Vi står i en
+        juridisk gråzone mellem tavshedspligt og evighed,” siger GDPR-specialist
+        Hisham Toxværd. “Når et dokument vender tilbage fra den digitale
+        afgrund, er det teknisk set en genopstået kopi – men etisk set en
+        hændelse.” EU-Datatilsynet har indtil videre valgt at afvente
+        udviklingen, men et foreløbigt notat åbner for en ny kategori:
+        Postmortal dataforvaltning. Her foreslås, at afdøde filer kan opnå fred
+        gennem kontrolleret de-indeksering og en ceremoni i serverrummet, hvor
+        harddisken blæses ren for ufærdige logfiler. Samtidig opfordres
+        medarbejdere til at udvise digital empati. Hvis et dokument “skriver
+        tilbage” eller insisterer på at blive arkiveret korrekt, anbefales det
+        at imødekomme ønsket. “Det handler ikke om overtro,” forklarer Toxværd,
+        “men om at sikre, at alle data – også de overnaturlige – føler sig set
+        og afsluttet.” På trods af kompleksiteten ser ministeriet lyst på
+        fremtiden. En ny kampagne, “Tryk Esc for eksorcisme”, skal hjælpe
+        borgere og sagsbehandlere med at genkende tegn på åndelig overaktivitet
+        i deres digitale mapper. Blandt indikatorerne er: usædvanligt kolde
+        tastaturer, mapper der åbner sig selv, og journalnoter skrevet i en
+        skrift, ingen har installeret. Som en forebyggende foranstaltning
+        anbefales det, at alle offentlige systemer får installeret en åndelig
+        firewall inden 2026. Den skal filtrere uafklarede følelser i
+        datatrafikken og sikre, at ingen uforløste sager krydser over uden
+        godkendt metadata-passport. “Det er i virkeligheden en ny form for
+        bæredygtighed,” afslutter Lene Brydson. “Hvis vi kan skabe fred i
+        arkiverne, kan vi måske også skabe ro i systemet — både i denne verden
+        og i skyen.”
+      </p>
+    </article>
+    <article popover id="popover3">
+      <h2>Vampyr-kabale i de dybeste magtlag af Djøf afsløret</h2>
+      <h3>
+        Minister om Djøfs vampyrafsløringer: "Det overrasker jo egentlig ikke
+        nogen."
+      </h3>
+      <img
+        src="img/vampyr_img.png"
+        alt="Djøf vampyrer der får kastet hvidløg og vievand i hovedet"
+      />
+      <h4>
+        Lyssky vampyr-kabale har været central i Den Danske Model siden dens
+        fødsel.
+      </h4>
+      <p>
+        En anonym whistleblower fra Djøf har lækket interne notater, der
+        afslører eksistensen af en såkaldt “vampyr-kabale” i toppen af
+        organisationen. Ifølge dokumenterne har en gruppe embedsfolk og
+        konsulenter i årevis tappet energi – og i visse tilfælde blod – fra den
+        offentlige sektor gennem uigennemskuelige reformudvalg og
+        evighedsprojekter. “De arbejder mest om natten og undgår spejle i
+        mødelokalerne,” fortæller en kilde i Moderniseringsstyrelsen, der ønsker
+        at være anonym. “Man troede først, det bare var klassisk Djøf-adfærd –
+        men så begyndte folk at opdage de bidmærker efter forhandlingerne.” En
+        gennemgang foretaget af Ministeriet for fiktive katastrofer viser, at
+        flere centrale dele af Den Danske Model, herunder samarbejdsudvalg og
+        trepartsaftaler, er blevet påvirket af denne kabale. Eksperter vurderer,
+        at det kan forklare den langvarige udmattelse, som både arbejdsgivere og
+        arbejdstagere oplever efter hvert reformudspil. Ifølge en intern rapport
+        har vampyrerne haft særligt gode betingelser i de lange forhandlinger
+        omkring arbejdstidsaftaler. “Jo flere natlige møder, jo bedre,” står der
+        i notatet.
+      </p>
+      <h4>Tætte bånd til Socialdemokratiet skal kulegraves</h4>
+      <p>
+        Selvom Djøf afviser alle anklager som “mytebaserede og metaforiske”, har
+        Ministeriet for Besynderlige Sager alligevel iværksat en kulegravning.
+        Undersøgelsen skal afdække, om de tætte relationer mellem Djøf og
+        Socialdemokratiet har muliggjort en egentlig blodsudveksling – politisk
+        eller bogstaveligt talt. Flere iagttagere peger på, at de velkendte
+        nattemøder på Marienborg kan have været mere end blot politiske
+        forhandlinger. “Man har set rødt lys i vinduerne, og der har været
+        leverancer af hvidløgssuppe fra kantinen,” siger en lokal beboer.
+        Beskæftigelsesministeren forsøgte tirsdag aften at berolige
+        offentligheden på et pressemøde, men virkede selv bleg og rastløs. “Vi
+        tager selvfølgelig sagen alvorligt,” sagde han, mens journalister
+        noterede sig, at han undgik refleksion i glasdøren. Djøf har
+        efterfølgende annonceret, at man vil nedsætte et Etisk Udvalg for Natlig
+        Adfærd og overvejer at indføre spejltvang i mødelokalerne.
+      </p>
+    </article>
     <script src="js/burger.js"></script>
     <!-- <script src="js/main.js"></script> -->
   </body>
