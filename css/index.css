@@ -1,0 +1,41 @@
+[popover]::backdrop {
+  backdrop-filter: blur (8px);
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+[popover]:popover-open {
+  max-height: 90vh;
+  max-width: 65ch;
+  margin: auto auto;
+  padding: 20px;
+  background-color: #fffae2;
+}
+
+[popover]:popover-open h2 {
+  font-size: 1.7rem;
+  margin-bottom: 2%;
+}
+
+[popover]:popover-open h3 {
+  font-size: 1.1rem;
+  margin-bottom: 2%;
+  font-weight: 500;
+}
+
+[popover]:popover-open p {
+  font-size: 1rem;
+  margin-bottom: 2%;
+}
+
+[popover]:popover-open img {
+  width: auto;
+  height: 18rem;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.cta_btn {
+  border: none;
+}
+
