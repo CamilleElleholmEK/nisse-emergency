@@ -60,18 +60,18 @@
 }
 
 textarea {
-  border: #dbe2f5 solid 4px;
+  border: #E5E8F5 solid 4px;
 }
 
 select {
   padding: 8px;
   border-radius: 0px;
-  border: #dbe2f5 solid 4px;
+  border: #E5E8F5 solid 4px;
 }
 
 fieldset {
   padding: 8px;
-  border: #dbe2f5 solid 4px;
+  border: #E5E8F5 solid 4px;
 }
 
 .form-group:has(:required) {
@@ -95,7 +95,7 @@ fieldset {
 }
 
 :focus-visible {
-  outline: 2px solid #90aeff;
+  outline: 2px solid #2A2A6E;
   outline-offset: 1px;
 }
 
@@ -119,7 +119,7 @@ label:has(input) {
 }
 
 form {
-  accent-color: #ff4b00;
+  accent-color: #14143C;
   display: grid;
   gap: 1rlh;
   padding: 1rlh;
@@ -127,7 +127,7 @@ form {
 
 button {
   padding: 4px 20px 4px 20px;
-  background-color: #ff4b00;
+  background-color: #14143C;
   color: white;
   cursor: pointer;
   border: none;
@@ -136,7 +136,7 @@ button {
 input {
   padding: 3px;
   box-shadow: 1px 1px 5px lightgray;
-  background-color: #dbe2f5;
+  background-color: #E5E8F5;
   border: none;
 }
 

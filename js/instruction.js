@@ -4,6 +4,9 @@ document.querySelector("#eyebrow").addEventListener("click", eyebrowF);
 
 function eyebrowF() {
   console.log("eyebrow function loaded");
+  document.querySelector("#eyes").style.backgroundColor = "#ffffff";
+  document.querySelector("#mouth").style.backgroundColor = "#ffffff";
+  document.querySelector("#eyebrow").style.backgroundColor = "#FFC247";
   document.querySelector("#hotspotEyebrow").classList.remove("hide");
   document.querySelector("#hotspotEyes").classList.add("hide");
   document.querySelector("#hotspotMouth").classList.add("hide");
@@ -20,6 +23,9 @@ document.querySelector("#eyes").addEventListener("click", eyesF);
 
 function eyesF() {
   console.log("eyes function loaded");
+  document.querySelector("#eyes").style.backgroundColor = "#FFC247";
+  document.querySelector("#mouth").style.backgroundColor = "#ffffff";
+  document.querySelector("#eyebrow").style.backgroundColor = "#ffffff";
   document.querySelector("#hotspotEyes").classList.remove("hide");
   document.querySelector("#hotspotEyebrow").classList.add("hide");
   document.querySelector("#hotspotMouth").classList.add("hide");
@@ -36,6 +42,9 @@ document.querySelector("#mouth").addEventListener("click", mouthF);
 
 function mouthF() {
   console.log("mouth function loaded");
+  document.querySelector("#eyes").style.backgroundColor = "#ffffff";
+  document.querySelector("#mouth").style.backgroundColor = "#FFC247";
+  document.querySelector("#eyebrow").style.backgroundColor = "#ffffff";
   document.querySelector("#hotspotMouth").classList.remove("hide");
   document.querySelector("#hotspotEyes").classList.add("hide");
   document.querySelector("#hotspotEyebrow").classList.add("hide");

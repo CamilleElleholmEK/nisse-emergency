@@ -8,6 +8,10 @@ header {
   height: min-content;
 }
 
+.logo {
+  padding: 10px 0 10px 10px;
+}
+
 #main-disclamer {
   height: 225px;
   background-color: var(--color-head-bg);
@@ -49,7 +53,7 @@ h1 {
 #instruction p {
   grid-column: 1/-1;
   margin-bottom: 20px;
-  font-size: var(--font-h2-size);
+  font-size: var(--font-p-size);
   line-height: 1.5rem;
 }
 
@@ -67,12 +71,12 @@ h3 {
   font-size: var(--headline3-size);
 }
 
-main>h1 {
+main > h1 {
   width: calc(80% - 6rem);
 }
 
 /* NAVIGATION STRUCTURES */
-header>nav {
+header > nav {
   height: 100%;
   background-color: var(--color-menu-bg);
 }
@@ -96,10 +100,10 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 3.6rem;
+  height: auto;
 }
 
-#logotype-wrapper>a {
+#logotype-wrapper > a {
   color: var(--color-text-logotype);
   font-size: var(--font-logotype-size);
   font-weight: var(--font-weight-medium);
@@ -111,14 +115,14 @@ nav a {
 header nav li a {
   margin: 1.5rem;
   background-color: var(--color-link-bg);
-  color: var(--color-text);
+  color: #ffffff;
   font-size: var(--followup-text-size);
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius-links);
 }
 
 /* Pilen efter menu-tekst */
-header>nav li>a:after {
+header > nav li > a:after {
   content: " \2192";
 }
 
