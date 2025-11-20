@@ -26,6 +26,10 @@
   justify-self: left;
   width: 80%;
 }
+.daily_text .cta_btn:hover {
+  background-color: var(--hover-yellow);
+}
+
 .daily_img {
   width: 100%;
   height: 100%;
@@ -84,9 +88,16 @@
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
 }
+.news_card .cta_btn:hover {
+  background-color: var(--hover-light);
+}
+
 .news_card:nth-of-type(2n) .cta_btn {
   background-color: var(--color-cta-newscard-bg-inverted);
-  color: var(--color-text);
+  color: var(--color-text-inverted);
+}
+.news_card:nth-of-type(2n) .cta_btn:hover {
+  background-color: var(--hover-dark);
 }
 .cta_btn:after {
   content: "\2192";

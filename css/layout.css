@@ -24,12 +24,12 @@ footer {
   display: grid;
   gap: 10px;
 }
-header nav,
-footer nav {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 header nav > * {
   flex: 1;
 }
@@ -43,7 +43,15 @@ header ul {
 }
 footer ul {
   flex-direction: column;
-  padding-left: 1rem;
+}
+
+.some,
+.another {
+  margin-bottom: 5rem;
+}
+
+.another ul li {
+  padding-bottom: 0.5rem;
 }
 
 /* LAYOUT FOR SECTIONS */
@@ -79,6 +87,6 @@ footer ul {
     grid-column: 1 / -1;
   }
   footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 }

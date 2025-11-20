@@ -1,34 +1,35 @@
 :root {
   /* Colours */
-  --color-bg: #f3f4ff; /* page background /*
+  --color-bg: light-dark(#f3f4ff, #00010a); /* page background /*
 
   /* Header */
-  --color-head-bg: #2a2a6e;
+  --color-head-bg: light-dark(#2a2a6e, #9090d5);
 
   /* Logotype */
-  --color-logotype-bg: #14143c;
-  --color-text-logotype: #fffae2;
+  --color-logotype-bg: light-dark(#14143c, #c1c1eb);
+  --logo-text: light-dark(#ffffff, #00010a);
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #2a2a6e;
+  --color-menu-bg: light-dark(#2a2a6e, #9090d5);
   /* Links */
-  --color-link-bg: #4a4aa0;
-  --color-link-hover: #fff; /* used */
+  --color-link-bg: light-dark(#4a4aa0, #6363c9);
+  --color-link-hover: light-dark(#14143c, #c1c1eb); /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 37px;
 
   /* Headlines og rubrik */
   --font-h1-size: 3rem;
   --font-sub1-size: 3rem;
+  --font-under-size: 1.5rem;
   --font-h2-size: 1.5rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #14143c;
-  --color-headline-text-page: #ffffff;
+  --color-headline-bg: light-dark(#14143c, #c1c1eb);
+  --color-headline-text-page: light-dark(#ffffff, #1c2333);
 
   /* Tekst */
-  --color-text: #1C2333;
-  --color-text-inverted: #ffffff;
+  --color-text: light-dark(#1c2333, #ced4e4);
+  --color-text-inverted: light-dark(#ffffff, #1c2333);
 
   /*  Marginer */
   --margin-head-bottom: 40px;
@@ -37,13 +38,16 @@
   --border-radius: 37px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
-  --color-cta-card-bg: #FFC247;
+  --color-card-bg: light-dark(#ffffff, #272837);
+  --color-cta-card-bg: light-dark(#ffc247, #b87a00);
   /* news-cards */
-  --color-news-bg: #ffffff;
-  --color-news-bg-inverted: #E5E8F5;
-  --color-cta-newscard-bg: #7373C9;
-  --color-cta-newscard-bg-inverted: #4A4AA0;
+  --color-news-bg: light-dark(#ffffff, #272837);
+  --color-news-bg-inverted: light-dark(#e5e8f5, #666776);
+  --color-cta-newscard-bg: light-dark(#7373c9, #4949b1);
+  --color-cta-newscard-bg-inverted: light-dark(#4a4aa0, #6363c9);
+  --hover-yellow: light-dark(#b87a00, #ffe1a3);
+  --hover-dark: light-dark(#2a2a6e, #9090d5);
+  --hover-light: light-dark(#4a4aa0, #6363c9);
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -63,7 +67,9 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #ffffff;
-  --color-infobox-1-bg: #7373C9;
-  --color-infobox-2-bg: #4A4AA0;
+  --color-info-bg: light-dark(#ffffff, #272837);
+  --color-infobox-1-bg: light-dark(#7373c9, #4949b1);
+  --color-infobox-2-bg: light-dark(#4a4aa0, #6363c9);
+
+  --dropshadow: light-dark(lightgray, black);
 }
