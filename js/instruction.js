@@ -31,11 +31,11 @@ function eyesF() {
   document.querySelector("#hotspotMouth").classList.add("hide");
   document.querySelector("#info-h2").innerHTML = "Øjne";
   document.querySelector("#info-p").innerHTML =
-    "Mansplainerens øjne står altid i forrulle-position: blankpolerede kuglelejer, der kan lave fuld 360° ved første “jeg ser det anderledes”. I hvile blinker de med en “jeg ved nok bedre”-glans; ved modspørgsmål begynder iris at varme op som en kontorstol, der er klar til at dreje. Det mest effektive, høfligt-drilske modtræk er Rullefangeren™: Når øjnene begynder at rulle, følger du dem roligt med dit eget blik – helt bogstaveligt – og kommenterer klinisk venligt: “Fantastisk rotation, ligger vi på 8.000 rpm?” eller “Jeg ser, supporthjulene er i gang.” Afslut med et hjælpsomt: “Skal jeg holde hovedet stille, så dine øjne kan få en lige landingsbane?” Pludselig er det ikke din pointe, men hans øjen-gimbal, der er i spotlight.";
+    "Mansplainerens øjne står altid i forrulle-position: blankpolerede kuglelejer, der kan lave fuld 360° ved første “jeg ser det anderledes”. I hvile blinker de med en “jeg ved nok bedre”-glans; ved modspørgsmål begynder iris at varme op som en kontorstol, der er klar til at dreje. Det mest effektive, drilske modtræk er Rullefangeren™: Når øjnene begynder at rulle, følger du dem roligt med dit eget blik – helt bogstaveligt – og kommenterer klinisk venligt: “Fantastisk rotation, ligger vi på 8.000 rpm?”. Afslut med et hjælpsomt: “Skal jeg holde hovedet stille, så dine øjne kan få en lige landingsbane?” Pludselig er det ikke din pointe, men hans øjen-gimbal, der er i spotlight.";
   document.querySelector("#effekt").innerHTML =
     "Effektiviteten er høj, fordi du udstiller selve mekanikken. Det afvæbner og skruer ned for gravitas og gør ham bevidst om hvor meget centrifuge der er i gang.";
   document.querySelector("#styrke").innerHTML =
-    "Styrkerne? Du flytter spotlightet fra personen til mekanikken—rullen bliver punchline, ikke du. Det er høflig ninja-teknik: ingen konfrontation, bare et tørt observationsstik, der får centrifugen til at sænke farten af sig selv.";
+    "Du flytter spotlightet fra personen til mekanikken. Det er høflig ninja-teknik: ingen konfrontation, bare et tørt observationsstik, der får centrifugen til at sænke farten af sig selv.";
 }
 
 document.querySelector("#mouth").addEventListener("click", mouthF);

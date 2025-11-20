@@ -14,7 +14,7 @@
 
 #form-section,
 #form-summary {
-  background-color: white;
+  background-color: var(--color-news-bg);
   border-radius: 37px;
   padding: 20px 0px 20px 0px;
   font-size: 16px;
@@ -60,18 +60,24 @@
 }
 
 textarea {
-  border: #E5E8F5 solid 4px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--color-news-bg-inverted);
 }
 
 select {
   padding: 8px;
   border-radius: 0px;
-  border: #E5E8F5 solid 4px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--color-news-bg-inverted);
 }
 
 fieldset {
   padding: 8px;
-  border: #E5E8F5 solid 4px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--color-news-bg-inverted);
 }
 
 .form-group:has(:required) {
@@ -95,7 +101,9 @@ fieldset {
 }
 
 :focus-visible {
-  outline: 2px solid #2A2A6E;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--color-head-bg);
   outline-offset: 1px;
 }
 
@@ -119,7 +127,7 @@ label:has(input) {
 }
 
 form {
-  accent-color: #14143C;
+  accent-color: var(--color-logotype-bg);
   display: grid;
   gap: 1rlh;
   padding: 1rlh;
@@ -127,16 +135,16 @@ form {
 
 button {
   padding: 4px 20px 4px 20px;
-  background-color: #14143C;
-  color: white;
+  background-color: var(--color-logotype-bg);
+  color: var(--color-text-inverted);
   cursor: pointer;
   border: none;
 }
 
 input {
   padding: 3px;
-  box-shadow: 1px 1px 5px lightgray;
-  background-color: #E5E8F5;
+  box-shadow: 1px 1px 5px var(--dropshadow);
+  background-color: #e5e8f5;
   border: none;
 }
 
